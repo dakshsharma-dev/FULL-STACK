@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BASIC HTML TAGS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <p id="para">*********************** <br>HEADINGS ARE BASED ON IMPORTANCE NOT ON SIZE(size is controlled using css)
+        <br>***********************</p>
+    <br>
+    <br>
+    <hr>
+    <hr>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis odio nisi consequatur minus. <br>
+        <hr> Fugit, quas alias! Voluptates itaque aperiam, facilis nemo accusantium voluptatum. Itaque delectus eveniet
+        possimus impedit nobis.
+    </p>
+
+
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <br> <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit vitae qui officia nisi et natus animi similique
+        porro iure dolor, ipsam molestias necessitatibus voluptatum excepturi.
+    </p>Quia repellat minima quae est sapiente earum dolores nihil ipsum! Deserunt, minima!</p>
+
+
+    <!-- Relative path → location depends on current file -->
+    <img src="../ASSETS/programmer.png" alt="programmer" height="300px">
+
+    <!--
+        current file      → ./file.ext
+        one level up      → ../file.ext
+        two levels up     → ../../file.ext
+        three levels up   → ../../../file.ext
+    -->
+
+    <!--
+        project-root
+        │
+        ├── assets
+        │   └── images
+        │       └── logo.png
+        │
+        └── src
+            └── pages
+                └── admin
+                    └── dashboard.html
+    -->
+    <!-- <img src="../../../assets/images/logo.png" alt="logo"> -->
+
+
+    <!-- Absolute URL → location is fixed globally -->
+    <img src="https://1000logos.net/wp-content/uploads/2021/05/GitHub-logo.png" alt="GITHUB" height="300px">
+
+
+
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+
+    <video src="../ASSETS/kohliVideo.mp4" width="200px" controls muted loop></video>
+    <!-- if muted is present, only then the video will autoplay as if audio or video starts to play itself it gives a very unpleasant experience to the user -->
+    <br>
+    <hr>
+    <br>
+    <hr>
+
+    <a href="https://www.google.com" target="_blank">Google</a>
+    <a href="https://www.instagram.com" target="_blank">instagram</a>
+    <a href="https://www.chatgpt.com" target="_blank">Chatgpt</a>
+    <a href="https://www.github.com" target="_blank">GITHUB</a>
+
+    <br>
+    <hr>
+    <br>
+    <hr>
+    <h2>USE OF SEMANTIC(INLINE) TAGS</h2>
+    <b>1. BOLD</b>
+    <!-- Visual only. Avoid in real projects. Use CSS or <strong> instead -->
+
+    <br>
+
+    <strong>2. Warning</strong>
+    <!-- Semantic importance. Better than <b>. Screen readers emphasize it -->
+
+    <br>
+
+    <i>3. italic</i>
+    <!-- Valid, but narrow use only (foreign words, thoughts, scientific names).
+     NOT for emphasis -->
+
+    <br>
+
+    <em>4. Read this carefully</em>
+    <!-- Semantic emphasis. Changes meaning, not just appearance -->
+
+    <br>
+
+    <u>5. underline</u>
+    <!-- Rarely useful. Underline implies links. Avoid unless annotating text -->
+
+    <br>
+
+    <mark>6. Important point</mark>
+    <!-- Highlighted text. Good replacement for misused <u> -->
+
+    <br>
+
+    <s>7. strikethrough</s>
+    <!-- Content is no longer accurate, but not deleted -->
+
+    <br>
+
+    <p>
+        Price: <del>8. ₹500</del> ₹350
+    </p>
+    <!-- <del> means removed content. Semantic, accessible -->
+
+    <br>
+
+    <small>9. *Terms and conditions apply</small>
+    <!-- Fine print, side notes, disclaimers -->
+
+    <br>
+
+    Use <code>10. printf()</code> in C++
+    <!-- Inline code representation. Correct usage -->
+
+    <br>
+
+    <abbr title="HyperText Markup Language">11. HTML</abbr>
+    <!-- Abbreviation with full form for accessibility -->
+
+    <br>
+
+    <time datetime="2026-02-04">12. Today</time>
+    <!-- Machine-readable date for SEO, bots, calendars -->
+
+    <br>
+    <br>
+
+    <span id="status">13. Online(use of span)</span> 
+    <p>13. Total: <span class="price">₹350(use of span)</span></p> <br>
+    <span>13. 2026-02-04(use of span)</span>
+    <!-- 
+    <span> →→→→ nothing just a wrapper
+    If the text has meaning → use semantic tag
+    If it has no meaning, just styling/JS → use <span> 
+    -->
+
+    <br>
+    <hr>
+    <br>
+    <hr>
+
+    <pre>
+        USE OF PRE TAG(preserves text formatting , useful for writing code & maintains whitespaces and linebreaks)
+        one 
+            two 
+                three
+                    four
+                        five
+                            six
+                                seven
+                                    eight
+                                        nine
+                                            ten
+    </pre>
+
+    <br>
+    <hr>
+    <br>
+    <hr>
+
+    <h2>USE OF sup & sub</h2>
+    <p>(a+b)<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup> + 2ab</p>
+
+    <p>C + O<sub>2</sub> → CO<sub>2</sub></p>
+
+    <br>
+    <hr>
+    <br>
+    <hr>
+
+    <h2>CHARACTER ENTITY REFERENCE(refer to notes)</h2>
+    <p>used to display reserved keyword or special characters(like white spaces, <, >)</p>
+
+    <br>
+    <hr>
+    <br>
+    <hr>
+
+
+
+
+</body>
+
+</html>
