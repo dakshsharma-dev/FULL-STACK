@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LISTS/TABLES/FORMS</title>
+    <style>
+        #heading{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">LISTS</h1>
+    <ol type="A">
+        <li>HTML</li>
+        <ol type="a">
+            <li>level123</li>
+            <li>level4</li>
+        </ol>
+        <li>C</li>
+        <li>C++</li>
+        <li>JAVA</li>
+    </ol>
+    <ul>
+        <li>apple</li>
+        <ul>
+            <li>red apple</li>
+            <li>green apple</li>
+        </ul>
+        <li>banana</li>
+        <li>mango</li>
+        <li>kela</li>
+    </ul>
+    <hr>
+    <br>
+    <hr>
+    <br>
+
+
+    <h1 id="heading">TABLE</h1>
+    <table border="2">
+        <caption><strong>Daksh/Aadi<strong></caption>
+        <tr>
+            <th rowspan="3">Details</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Email</th>
+            <th>Rollno</th>
+        </tr>
+        <tr>
+            <td>Daksh</td>
+            <td>20</td>
+            <td>dakshsharma1016@gmail.com</td>
+            <td>2400320100385</td>
+        </tr>
+        <tr>
+            <td>Aadi</td>
+            <td>20</td>
+            <td>aadimavi2525@gmail.com</td>
+            <td>2500320100385</td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                using colspan to merge columns.
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <br>
+    <hr>
+    <br>
+
+    <h1 id="heading">Forms</h1>
+    <form>
+        <label for="username">UserName</label>
+        <input type="text" placeholder="Enter Username" id="username" name="username" value="Daksh"><br>
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="password" id="password" name="password" ><br>
+
+        <label for="date">Date</label>
+        <input type="date" id="date" name="date"> <br>
+ 
+        <label for="file">File</label>
+        <input type="file" id="file" name="file"> <br>
+
+        Sex:
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="sex" value="male">
+        <label for="female">Female</label>
+        <input type="radio" name="sex" id="female" value="female"><br>
+
+        <label for="c">C</label>
+        <input type="checkbox" id="c" name="languages" value="c">
+        <label for="c++">C++</label>
+        <input type="checkbox" name="languages" id="c++" value="c++">
+        <label for="java">JAVA</label>
+        <input type="checkbox" name="languages" id="java" value="java">
+        <label for="python">PYTHON</label>
+        <input type="checkbox" name="languages" id="python" value="python">
+        <label for="js">JAVASCRIPT</label>
+        <input type="checkbox" name="languages" id="js" value="js">
+        <br>
+
+        <label for="country">Select Country</label>
+        <select name="country" id="country">
+            <option value="India">India</option>
+            <option value="NZ">NZ</option>
+            <option value="POLAND">POLAND</option>
+            <option value="GERMANY">GERMANY</option>
+        </select>
+        <br>
+
+        <textarea rows="4" cols="40">
+            Default text here
+        </textarea>
+        <br>
+        <input type="submit">
+    </form>
+
+    <h1 id="heading">Iframe</h1>
+    <iframe width="560" height="320" src="https://www.youtube.com/embed/q8EevlEpQ2A?si=_nWIVrfWVpvXRd2H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <br>
+    <iframe src="https://en.wikipedia.org/wiki/World_War_II" frameborder="0" height="560" width="600"></iframe>
+    <br>
+    
+</body>
+</html>
