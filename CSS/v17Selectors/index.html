@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SELECTORS</title>
+    <style>
+        /* Element Selector */
+        /* div{
+            background-color: red;
+        } */
+
+        /* Class Selector */
+        .red{
+            background-color: red;
+        }
+
+        /* Id Selector */
+        #blue{
+            background-color: blue;
+        }
+
+        /* Child Selector */
+        div > p{
+            color: blue;
+            background-color: brown;
+        }
+
+        /* Desdendant Selector */
+        div p{
+            color: aquamarine;
+            background-color: blueviolet;
+        }
+
+        /* Universal Selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selector */
+        a:visited{
+            color: yellowgreen;
+        }
+        a:link{
+            color: brown;
+        }
+        a:active{
+            background-color: red;
+        }
+        a:hover{
+            background-color: blueviolet;
+        }
+        /* p:first-child{
+            background-color: aqua;
+        } */
+
+    </style>
+</head>
+<body>
+    <main class="one">
+        <p>I am first</p>
+        <p>I am second</p>
+    </main>
+
+    <div class="red">
+        I am a div
+    </div>
+
+    <div id="blue">
+        I am also a div
+    </div>
+
+    <div>
+        <p>I am a paragraph inside div</p>
+    </div>
+
+    <div>
+        I am another div
+        <article>
+            <p>I am a paragraph inside div</p>
+        </article>
+    </div>
+
+    <a href="https://www.google.com" target="_blank">Google</a>
+    <br>
+    <a href="https://www.wikipedia.com" target="_blank">Wikipedia</a>
+    <br>
+    <a href="https://www.facebook.com" target="_blank">Facebook</a>
+
+
+</body>
+</html>
