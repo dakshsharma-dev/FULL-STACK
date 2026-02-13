@@ -29,25 +29,45 @@
             /* width: 1200px; */
             width: 80vw;
             margin: 23px auto; 
-            height: 80vh; 
+            /* height: 80vh;  */
+            min-height: 80vh;
             /* above will work only for block element */
             color: blueviolet;
             font-size: 18px;
             background-color: orange;
         }
-        .container p{
+        .container > div{
             /* font-size: 1.5em; */ 
             /* jitna isko milne wala tha(via container) uske em times */
             font-size: 2rem; 
             /* with respect to root element(html) */
+
+            border: 2px solid black;
+            width: 50%;
+        }
+        .container > div > div{
+            border: 2px solid black;
+            width: 50%;
         }
         .mycontainer{
-            background-color: red;
-            color: yellow;
+            box-sizing: border-box;
+            border: 2px solid black;
+            margin: 23px auto; 
+            color: rgb(20, 20, 1);
+            font-size: 22px;
+            width: 80vw;
+        }
+        /* .mycontainer{
+            box-sizing: border-box;
+            border: 2px solid black;
+            margin: 23px auto; 
+            color: rgb(20, 20, 1);
             font-size: 22px;
             width: 100vmin;
-            /* in laptop vmin is height so 100vmin = 100vh for this device */
-        }
+            width: 100vh;
+            in laptop vmin is height so 100vmin = 100vh for this device
+        } 
+        */
     </style>
 </head>
 <body>
@@ -55,9 +75,13 @@
         This is a box
     </div>
     <div class="container">
-        <p>
+        <div>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, voluptatem ea recusandae qui cumque dicta obcaecati ratione aut debitis eveniet iusto a. Incidunt, modi, vel possimus adipisci tempore illo quas in ipsam ea illum veritatis magnam dolor consequatur accusantium. Temporibus voluptatem ipsam ex nesciunt id?
-        </p>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eaque blanditiis, a officia totam minima sequi facere molestias et voluptate.
+        </div>
+        </div>
+        <!-- Expand  lorem444 to see that this container will adjust its height -->
     </div>
 
     <div class="mycontainer">
