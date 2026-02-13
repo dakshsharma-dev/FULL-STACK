@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIZING UNITS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 12px;
+        }
+        .box{
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 1200px; */
+            width: 80vw;
+            height: 10vh;
+            margin: auto;  
+            /* above will work only for block element */
+            color: blueviolet;
+            background-color: orange;
+        }
+        .container{
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 1200px; */
+            width: 80vw;
+            margin: 23px auto; 
+            height: 80vh; 
+            /* above will work only for block element */
+            color: blueviolet;
+            font-size: 18px;
+            background-color: orange;
+        }
+        .container p{
+            /* font-size: 1.5em; */ 
+            /* jitna isko milne wala tha(via container) uske em times */
+            font-size: 2rem; 
+            /* with respect to root element(html) */
+        }
+        .mycontainer{
+            background-color: red;
+            color: yellow;
+            font-size: 22px;
+            width: 100vmin;
+            /* in laptop vmin is height so 100vmin = 100vh for this device */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        This is a box
+    </div>
+    <div class="container">
+        <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, voluptatem ea recusandae qui cumque dicta obcaecati ratione aut debitis eveniet iusto a. Incidunt, modi, vel possimus adipisci tempore illo quas in ipsam ea illum veritatis magnam dolor consequatur accusantium. Temporibus voluptatem ipsam ex nesciunt id?
+        </p>
+    </div>
+
+    <div class="mycontainer">
+        I am another container
+    </div>
+</body>
+</html>
