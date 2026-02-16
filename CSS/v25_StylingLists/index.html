@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Lists</title>
+    <style>
+        nav ul li{
+            font-size: 50px;
+            list-style: devanagari;
+            background-color: #d6ad8c;
+            list-style-position: inside;
+            text-shadow: 5px 5px 5px rgb(203, 13, 228);
+            border: 5px solid black;
+            /* list-style-image: url("https://i0.wp.com/www.dogwonder.co.uk/wp-content/uploads/2009/12/tumblr_ku2pvuJkJG1qz9qooo1_r1_400.gif?resize=320%2C320"); */
+
+        }
+        nav ul li::marker{
+
+            content: "👻 ";
+        }
+    </style>
+</head>
+<body>
+    <nav style="display: flex;">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Education</li>
+            <li>Skills</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+</body>
+</html>
