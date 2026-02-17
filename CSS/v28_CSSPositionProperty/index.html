@@ -3,47 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS POSITION PROPERTY</title>
+    <title>CSS Position Demo</title>
+
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
-        .box1{
-            background-color: aqua;
-            position: relative;
-            z-index: 1;
+
+        /* Just for scroll demo */
+        body {
+            height: 200vh;
+            font-family: sans-serif;
         }
-        .box2{
-            background-color: red;
-            position: relative;
-            top: -100px;
-            left:  50px;
-        }
-        .box3{
-            background-color: teal;
-            position: relative;
-            z-index: 1;
-        }
-        .box4{
-            background-color: blueviolet;
-            position: relative;
-            top: -150px;
-            left: -50px;
-        }
-        .box{
+
+        /* Common box styling */
+        .box {
             height: 100px;
-            width:   80vw;
-            padding:  3px;
-            margin:   5px;
+            width: 80%;
+            margin: 20px auto;
+            padding: 10px;
             border: 2px solid black;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* 1️⃣ STATIC (default) */
+        .static-box {
+            background: gray;
+            /* position: static;  default */
+        }
+
+        /* 2️⃣ RELATIVE */
+        .relative-box {
+            background: teal;
+            position: relative;
+            top: 20px;      /* moves visually */
+            left: 40px;     /* original space still reserved */
+        }
+
+        /* Parent for absolute demo */
+        .parent {
+            position: relative;      /* makes it containing block */
+            height: 300px;
+            width: 90%;
+            margin: 50px auto;
+            border: 4px solid purple;
+            padding: 10px;
+        }
+
+        /* 3️⃣ ABSOLUTE */
+        .absolute-box {
+            background: crimson;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 150px;
+        }
+
+        /* 4️⃣ FIXED */
+        .fixed-box {
+            background: black;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            width: 150px;
+        }
+
+        /* 5️⃣ STICKY */
+        .sticky-box {
+            background: orange;
+            position: sticky;
+            top: 0;
+        }
+
+        /* Z-index demo */
+        .z1 {
+            position: relative;
+            background: blue;
+            top: 30px;
+            z-index: 1;
+        }
+
+        .z2 {
+            position: relative;
+            background: green;
+            z-index: 2;
         }
     </style>
 </head>
+
 <body>
-    <div class="box box1"> BOX1</div>
-    <div class="box box2"> BOX2</div>
-    <div class="box box3"> BOX3</div>
-    <div class="box box4"> BOX4</div>
+
+    <div class="box static-box">
+        STATIC (default)
+    </div>
+
+    <div class="box relative-box">
+        RELATIVE (moves but keeps space)
+    </div>
+
+    <div class="parent">
+        Parent (position: relative)
+
+        <div class="box absolute-box">
+            ABSOLUTE (positioned inside parent)
+        </div>
+    </div>
+
+    <div class="box sticky-box">
+        STICKY (scroll and watch me stick)
+    </div>
+
+    <div class="box z1">
+        Z-INDEX 1
+    </div>
+
+    <div class="box z2">
+        Z-INDEX 2 (on top)
+    </div>
+
+    <div class="box fixed-box">
+        FIXED (always visible)
+    </div>
+
 </body>
 </html>
