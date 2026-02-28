@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition</title>
+    <style>
+        .container {
+            background-color: rgb(235, 227, 88);
+            width: 50vw;
+            height: 40vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box {
+            background-color: aqua;
+            width: 5vw;
+            height: 4vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            /* Transition must be here (base state) */
+            transition: transform 2s ease-in-out 0s;
+        }
+
+        .box:hover {
+            transform: translateX(10vw) translateY(10vh);
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">BOX</div>
+    </div>
+</body>
+</html>
