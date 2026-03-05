@@ -13,3 +13,6 @@ a{
 a:hover{
     text-decoration: color(srgb rgb(241, 240, 240) rgb(237, 241, 237) rgb(243, 243, 248));
 }
+.left-section, right-section{
+    display: flex;
+}
