@@ -2,17 +2,18 @@ body{
     background-color: black;
     color: white;
 }
-.navbar{
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-}
 a{
     text-decoration: none;
 }
 a:hover{
     text-decoration: color(srgb rgb(241, 240, 240) rgb(237, 241, 237) rgb(243, 243, 248));
 }
-.left-section, right-section{
+.left-section, .right-section{
     display: flex;
+    align-items: center;
+    gap: 40px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
 }
