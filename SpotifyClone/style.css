@@ -5,8 +5,19 @@ body{
 a{
     text-decoration: none;
 }
-a:hover{
-    text-decoration: color(srgb rgb(241, 240, 240) rgb(237, 241, 237) rgb(243, 243, 248));
+.home-btn{
+    /* height: 48px;
+    width: 48px; */
+    background-color:#1f1f1f;
+    padding:10px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.home-btn:hover{
+    background-color:#2a2a2a;
 }
 .left-section, .right-section{
     display: flex;
@@ -14,6 +25,7 @@ a:hover{
     gap: 40px;
 }
 nav{
-    display: flex;
-    justify-content: space-around;
+    display:flex;
+    justify-content:space-between;
+    padding:10px 40px;
 }
