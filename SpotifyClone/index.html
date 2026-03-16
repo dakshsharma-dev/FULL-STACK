@@ -4,57 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify - Web Player: Music for everyone</title>
-    <!-- <link rel="icon" sizes="32x32" type="image/png" href="https://open.spotifycdn.com/cdn/images/favicon32.b64ecc03.png"> -->
-    <!-- <link rel="icon" sizes="16x16" type="image/png" href="https://open.spotifycdn.com/cdn/images/favicon16.1c487bff.png"> -->
-    <!-- <link rel="icon" href="https://open.spotifycdn.com/cdn/images/favicon.0f31d2ea.ico"> -->
     <link rel="shortcut icon" href="https://open.spotifycdn.com/cdn/images/favicon.0f31d2ea.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="left-section">
-                <img src="https://open.spotifycdn.com/cdn/images/favicon.0f31d2ea.ico" alt="Spotify - logo" height="40">
-                <a href="index.html" class="home-btn">
-                <svg viewBox="0 0 24 24" width="32" height="32">
-                <path fill="white" d="M12 3l9 8h-3v9h-5v-6H11v6H6v-9H3z"/>
-                </svg>
+    <header class="topbar">
+        <nav class="navbar">
+
+            <div class="left-group">
+                <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Primary_Logo_RGB_Green.png" alt="Spotify - logo" height="40">
+                <a href="index.html">
+                    <svg viewBox="0 0 24 24" width="32" height="32">
+                        <path fill = "White" d="M12 3l9 8h-3v9h-5v-6H11v6H6v-9H3z"/>
+                    </svg>
                 </a>
                 <form class="search-bar">
-                    <svg class="search-icon" viewBox="0 0 24 24" width="20" height="20">
-                        <path fill="white" d="M10 2a8 8 0 105.29 14.29l4.2 4.2 1.41-1.41-4.2-4.2A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z"/>
-                    </svg>
-
-                    <input type="text" placeholder="What do you want to play?">
-
-                    <svg class="browse-icon" viewBox="0 0 24 24" width="20" height="20">
-                        <path fill="white" d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/>
-                    </svg>
+                    <input type="text">
                 </form>
             </div>
             
-            <div class="right-section">
-                <button>Products</button>
+            <div class="right-group">
                 <button>Explore Premium</button>
                 <button>Install App</button>
                 <button>Notifications</button>
-                <button>Activities</button>
-
+                <button>Friends Activity</button>
+                <button>Account</button>
             </div>
         </nav>
     </header>
 
-    <main>
-        <section>Main section</section>
-        <section>Second main section</section>
-
-        <section>left section </section>
-        <section>right section </section>
+    <main class="layout">
+        <aside class="sidebar"></aside>
+        <section class="content"></section>
     </main>
 
-    <footer>
+    <footer class="player">
         This is a Spotify Clone.
-        This page is purely made for educational purposes.
     </footer>
 </body>
 </html>

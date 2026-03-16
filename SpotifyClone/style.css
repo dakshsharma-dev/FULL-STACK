@@ -2,30 +2,12 @@ body{
     background-color: black;
     color: white;
 }
-a{
-    text-decoration: none;
-}
-.home-btn{
-    /* height: 48px;
-    width: 48px; */
-    background-color:#1f1f1f;
-    padding:10px;
-    border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-}
-
-.home-btn:hover{
-    background-color:#2a2a2a;
-}
-.left-section, .right-section{
+.left-group, .right-group{
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 50px;
 }
-nav{
-    display:flex;
-    justify-content:space-between;
-    padding:10px 40px;
+.navbar{
+    display: flex;
+    justify-content: space-between;
 }
