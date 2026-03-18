@@ -9,13 +9,15 @@ body{
 .left-group, .right-group{
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 .search-bar{
     color: grey;
     display: flex;
+
 }
 button{
+    all: unset;
     font-size: medium;
     display: flex;
     justify-content: center;
@@ -24,6 +26,22 @@ button{
     padding: 10px;
     margin: 10px;
     border-radius: 100px;
+}
+.WhatsNew{
+    height: 10px;
+    background-color: black;
+    color: grey;
+}
+.icon{
+    transition: transform 0.2ease;
+}
+.icon:hover{
+    transform: scale(1.1);
+    transform-origin: center;
+}
+.premium{
+    height: 12px;
+    background-color: whitesmoke;
 }
 .home-btn{
     text-decoration: none;
