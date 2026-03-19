@@ -64,3 +64,7 @@ button{
     text-decoration: none;
     color: white;
 }
+.layout{
+    display: flex;
+    
+}
