@@ -4,17 +4,30 @@ body{
 }
 .navbar{
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 .left-group, .right-group{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 .search-bar{
-    color: grey;
     display: flex;
-
+    align-items: center;
+    background-color: #121212;
+    border-radius: 25px;
+    padding: 8px 15px;
+    gap: 10px;
+    flex: 1;
+}
+.search-bar input{
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    flex: 1;
+    min-width: 300px;
 }
 button{
     all: unset;
@@ -33,7 +46,7 @@ button{
     color: grey;
 }
 .icon{
-    transition: transform 0.2ease;
+    transition: transform 0.2s ease;
 }
 .icon:hover{
     transform: scale(1.1);
@@ -41,7 +54,8 @@ button{
 }
 .premium{
     height: 12px;
-    background-color: whitesmoke;
+    color: black;
+    background-color: white;
 }
 .home-btn{
     text-decoration: none;
