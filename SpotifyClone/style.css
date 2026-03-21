@@ -66,5 +66,19 @@ button{
 }
 .layout{
     display: flex;
-    
+}
+.sidebar{
+    border: 2px solid rgb(16, 16, 16);
+    height: 80vh;
+    width: 32vw;
+}
+aside > div > pre{
+    font-weight: bold;
+    font-size: large;
+}
+.layoutAside{
+    display: flex;
+}
+.content{
+    border: 2px solid grey;
 }
