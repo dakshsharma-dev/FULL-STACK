@@ -14,7 +14,18 @@
             border-radius: 2px;
             cursor: pointer;
             margin-right: 8px;
+            transition: opacity 0.15s;
         }
+        /* this is a pseudo class ----> this makes changes to existing CSS when we hover over it */
+        .subscribe-button:hover{     
+            opacity: 0.8;
+        }
+        /* applies styles while the element is being activated by the user. */
+        .subscribe-button:active{
+            opacity: 0.4;
+        }
+
+
         .join-button{
             color: rgb(0, 173, 241);
             background-color: white;
@@ -25,7 +36,17 @@
             border-style: solid;
             border-color: rgb(0, 170, 237);
             cursor: pointer;
+            transition: background-color 0.15s, color 0.15s, opacity 0.15s;
         }
+        .join-button:hover{
+            color: white;
+            background-color: rgb(0, 173, 241);
+        }
+        .join-button:active{
+            opacity: 0.7;
+        }
+
+
         .tweet-button{
             color: white;
             font-weight: bold;
@@ -37,6 +58,10 @@
             border-radius: 20px;
             margin-left: 8px;
             cursor: pointer;
+            transition: box-shadow 0.15s;
+        }
+        .tweet-button:hover{
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
         }
         .apply{
             color: white;
@@ -48,31 +73,63 @@
             border-radius: 20px;
             margin-left: 8px;
             cursor: pointer;
+            transition: filter 0.15s;
+        }
+        .apply:hover{
+            filter: brightness(80%);
         }
         .save-button{
             border-radius: 20px;
             font-weight: bold;
             width: 70px;
+            transition: filter 0.15s;
         }
+        .save-button:hover{
+            color: rgb(0, 173, 241);
+            background-color: rgb(210, 210, 223);
+            filter: brightness(100%);
+        }
+
         .cart-button{
             color: black;
             background-color: rgb(255, 216, 20);
             width: 200px;
             margin-top: 8px;
+            transition: filter 0.15s;
         }
+        .cart-button:hover{
+            filter: brightness(80%);
+        }
+
         .get-started-button{
             background-color: rgb(121, 82, 179);
             font-weight: bold;
             margin-left: 8px;
         }
+        .get-started-button:hover{
+            background-color: rgb(160, 117, 200);
+        }
+
         .download-button{
             color: rgb(121, 82, 179);
+            background-color: white;
             width: 100px;
             border-color: rgb(121, 82, 179);
+            transition: background-color 0.15s, color 0.15s;
         }
+        .download-button:hover{
+            color: white;
+            background-color: rgb(167, 161, 161);
+            border: none;
+        }
+
         .request-button{
             background-color: black;
             margin-left: 8px;
+            transition: opacity 0.15s;
+        }
+        .request-button:hover{
+            opacity: 0.8;
         }
     </style>
 </head>
