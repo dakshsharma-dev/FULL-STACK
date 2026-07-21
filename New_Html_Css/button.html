@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Buttons Gallery</title>
+    <link rel="icon" href="../../ASSETS/ButtonsFavicon.png">
     <style>
         .subscribe-button{
             color: white;
-            background-color: rgb(206, 10, 10);
+            background-color: rgb(204, 0, 0);
             border: none;
-            height: 35px;
-            width: 100px;
+            padding: 10px;
             border-radius: 2px;
             cursor: pointer;
             margin-right: 8px;
@@ -18,7 +18,7 @@
         }
         /* this is a pseudo class ----> this makes changes to existing CSS when we hover over it */
         .subscribe-button:hover{     
-            opacity: 0.8;
+            opacity: 0.7;
         }
         /* applies styles while the element is being activated by the user. */
         .subscribe-button:active{
@@ -29,8 +29,7 @@
         .join-button{
             color: rgb(0, 173, 241);
             background-color: white;
-            height: 35px;
-            width: 60px;
+            padding: 9px;
             border-radius: 2px;
             border-width: 1px;
             border-style: solid;
@@ -52,8 +51,9 @@
             font-weight: bold;
             font-size: 15px;
             background-color: rgb(5, 165, 228);
-            height: 35px;
-            width: 70px;
+            padding: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
             border: none;
             border-radius: 20px;
             margin-left: 8px;
@@ -67,8 +67,9 @@
             color: white;
             font-weight: bold;
             background-color: rgb(10, 102, 194);
-            height: 35px;
-            width: 220px;
+            padding: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
             border: none;
             border-radius: 20px;
             margin-left: 8px;
@@ -131,11 +132,61 @@
         .request-button:hover{
             opacity: 0.8;
         }
+        .shadow{
+            color: white;
+            background-color: rgb(243, 232, 24);
+            margin-right: 40px;
+            border: none;
+            padding: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            transition: box-shadow 0.15s;
+        }
+        .shadow:hover{
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+        }
+        .glance{
+            color: white;
+            background-color: red;
+            margin: 10px;
+            border: none;
+            padding: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            font-weight: bold;
+            transition: transform 0.15s;
+        }
+        .one:hover, .two:hover, .three:hover{
+            transform: scaleX(1.2);
+        }
+        .stretch{
+            color: white;
+            background-color: rgb(67, 36, 113);
+            border: none;
+            padding: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            transition: transform 0.5s;
+            transform-origin: top left;
+        }
+        .stretch:hover{
+            transform: scale(1.2);
+        }
+        .pagination button{
+            color: white;
+            background-color: rgb(213, 85, 38);
+            border: none;
+            padding: 10px 25px;
+        }
     </style>
 </head>
 <body>
     <button class="subscribe-button">SUBSCRIBE</button>
-    <button class="join-button">JOIN</button>
+    <button class="join-button">JOIN MY CHANNEL</button>
     <button class="tweet-button">Tweet</button>
     <button class="apply">Apply on company website</button>
     <button class="join-button save-button">Save</button>
@@ -143,5 +194,26 @@
     <button class="subscribe-button get-started-button">Get started</button>
     <button class="join-button download-button">Download</button>
     <button class="subscribe-button request-button">Request now</button>
+    <br>
+    <br>
+    <h2>Exercises</h2>
+    <button class="shadow">Shadow</button>
+    <button class="glance one">One</button>
+    <button class="glance two">Two</button>
+    <button class="glance three">Three</button>
+    <br>
+    <br>
+    <button class="stretch">Stretch</button>
+    <br>
+    <br>
+    <div class="pagination">
+        <button>Back</button>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <button>Next</button>
+    </div>
 </body>
 </html>
