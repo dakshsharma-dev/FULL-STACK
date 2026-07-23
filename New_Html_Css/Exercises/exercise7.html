@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise7</title>
+    <style>
+        .search-bar{
+            color: rgba(0, 0, 0, 0.6);
+            width: 400px;
+            padding: 10px;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .search-bar:focus{
+            outline: none;
+        }
+
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            color: rgba(0, 0, 0, 0.5);
+        }
+        .search-bar-email{
+            width: 300px;
+            padding:4px;
+            border: 1.5px solid rgba(0, 0, 0, 0.5);
+            border-radius: 2px;
+        }
+        .input::placeholder{
+            color: rgba(0, 0, 0, 0.5);
+        }
+        .agreeJoin{
+            color: white;
+            background-color: blue;
+            border: none;
+            border-radius: 15px;
+            padding: 8px;
+            width: 300px;
+            cursor: pointer;
+        }
+        .avatar{
+            width: 40px;
+            border-radius: 20px;
+        }
+        .happening{
+            color: rgba(0, 0, 0, 0.7);
+            border: none;
+            padding: 10px;
+        }
+        .happening:focus{
+            outline: none;
+        }
+        .tweet{
+            color: white;
+            background-color: rgb(11, 120, 236);
+            font-weight: bold;
+            border: none;
+            border-radius: 15px;
+            padding: 8px 15px;
+            cursor: pointer;
+        }
+        .avatar, .happening, .tweet{
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <input class="search-bar" type="text" placeholder="Search Google to type a URL">
+    <hr>
+
+    <p>Email</p>
+    <input class="search-bar-email" type="email" placeholder="abc@gmail.com">
+    <p>By clicking Agree & Join, you agree to the Privacy Policy</p>
+    <button class="agreeJoin">Agree & Join</button>
+    <hr>
+
+    <div>
+        <img class="avatar" src="avatar.png" alt="kitten">
+        <input class="happening" type="text" placeholder="What's happening?">
+        <button class="tweet">Tweet</button>
+    </div>
+    <hr>
+</body>
+</html>
