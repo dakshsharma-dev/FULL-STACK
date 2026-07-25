@@ -1,15 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YouTube Clone</title>
-    <link rel="icon" href="">
+    <link rel="icon" href="" />
     <style>
-        .thumbnail{
-            width: 200px;
+        .thumbnail {
+            width: 250px;
+            display: block;
         }
-        .search-bar{
+
+        .search-bar {
             color: rgba(0, 0, 0, 0.6);
             width: 400px;
             height: 30px;
@@ -17,16 +20,23 @@
             border-radius: 15px;
             box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
         }
-        .search-bar:focus{
+
+        .search-bar:focus {
             outline: none;
         }
-        .search-bar::placeholder{
+
+        .search-bar::placeholder {
             color: rgba(0, 0, 0, 0.5);
         }
-    </style>
+    </style>    
 </head>
+
 <body>
-    <img class="thumbnail" src="../../../ASSETS/Thumbnails/thumbnail-1.webp" alt="image">
-    <input class="search-bar" type="text" placeholder="Search Google to type a URL">
+    <input class="search-bar" type="text" placeholder="Search Google to type a URL" />
+    <img class="thumbnail" src="../../../ASSETS/Thumbnails/thumbnail-1.webp" alt="image" />
+    <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+    <p class="video-author">Marques Brownlee</p>
+    <p class="video-stats">3.4M views &middot; 6 months ago</p>
 </body>
+
 </html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise8</title>
+    <style>
+        input{
+            padding: 8px;
+            margin-bottom: 8px;
+        }
+        input::placeholder{
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgba(0, 0, 0, 0.6);
+        }
+        .input-box{
+            display: block;
+        }
+        p{
+            width: 200px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .google-logo{
+            width: 400px;
+        }
+        .google{
+            display: inline-block;
+            text-align: center;
+        }
+
+        .search-bar{
+            display: block;
+            color: rgba(0, 0, 0, 0.5);
+            width: 600px;
+            padding: 10px;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+        }
+        .search-bar:focus{
+            outline: none;
+        }
+
+        .sign-up-button{
+            width: 368px;
+            color: white;
+            background-color: rgb(17, 141, 243);
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+        .sign-up-button:hover{
+            opacity: 0.8;
+        }
+        .sign-up-button:active{
+            color: rgb(17, 141, 243);
+            background-color: white;
+            border: 1px, solid, rgb(17, 141, 243);
+        }
+
+        .request-uber{
+            color: white;
+            background-color: black;
+            padding: 8px 14px;
+            border: none;
+            border-radius: 2px;
+        }
+        .schedule-uber{
+            color: black;
+            background-color: white;
+            padding: 8px 14px;
+            border: 1px solid black;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="inputs">
+        <input class="input-box" type="text" placeholder="Name">
+        <input class="input-box" type="text" placeholder="Email">
+    </div>
+    <hr>
+    
+    <div class="feedback">
+        <p>Thanks for chatting with our customer support. Would you like to take our quick survey?</p>
+        <button>Yes</button>
+        <button>No</button>
+    </div>
+    <hr>
+    
+    <div class="google">
+        <img class="google-logo" src="google-logo.webp" alt="Google-image">
+        <input class="search-bar" type="text" placeholder="Search Google to type a URL">
+    </div>
+    <hr>
+
+    <div class="sign-up">
+        <input type="text" placeholder="First name">
+        <input type="text" placeholder="Last name">
+        <input style="display: block; width: 348px;" type="email" placeholder="Email">
+        <button class="sign-up-button">Sign Up</button>
+    </div>
+    <hr>
+
+    <div class="uber">
+        <p style="font-size: 32px; display: block; width: 400px;">Request a ride now</p>
+        <input style="display: block; width: 226px;" type="text" placeholder="Enter pickup location">
+        <input style="display: block; width: 226px;" type="text" placeholder="Enter destination">
+        <button class="request-uber">Request Now</button>
+        <button class="schedule-uber">Schedule for later</button>
+    </div>
+    
+</body>
+</html>
