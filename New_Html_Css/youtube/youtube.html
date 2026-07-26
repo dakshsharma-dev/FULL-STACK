@@ -5,72 +5,109 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YouTube Clone</title>
+    <link rel="stylesheet" href="youtube.css">
     <link rel="icon" href="" />
-    <style>
-        .thumbnail {
-            width: 250px;
-            /* display: block; */
-        }
-
-        .search-bar {
-            display: block;
-            color: rgba(0, 0, 0, 0.6);
-            width: 400px;
-            height: 30px;
-            border: none;
-            border-radius: 15px;
-            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-        }
-        .search-bar:focus {
-            outline: none;
-        }
-        .search-bar::placeholder {
-            color: rgba(0, 0, 0, 0.5);
-        }
-
-        .video-preview{
-            width: 250px;
-            height: 400px;
-            display: inline-block;
-            vertical-align: top;
-            margin-right: 10px;
-        }
-        .video-title{
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: 500;
-        }
-    </style>
 </head>
 
 <body>
     <input class="search-bar" type="text" placeholder="Search Google to type a URL" />
-    <div class="video-preview video1">
-        <img class="thumbnail" src="Thumbnails/thumbnail-1.webp" alt="image" />
-        <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
-        <p class="video-author">Marques Brownlee</p>
-        <p class="video-stats">3.4M views &middot; 6 months ago</p>
+    
+    <div class="video-preview">
+        <div class="thumbnail">
+            <img class="thumbnail-image" src="Thumbnails/thumbnail-1.webp" alt="image" />
+        </div>
+        <div class="video-info">
+            <div class="channel">
+                <img class="channel-image" src="Thumbnails/channel-1.jpeg" alt="channel-pic">
+            </div>
+            <div class="title-author-stats">
+                <span class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</span>
+                <span class="video-author">Marques Brownlee</span>
+                <span class="video-stats">3.4M views &middot; 6 months ago</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="video-preview">
+        <div class="thumbnail">
+            <img class="thumbnail-image" src="Thumbnails/thumbnail-2.webp" alt="image" />
+        </div>
+        <div class="video-info">
+            <div class="channel">
+                <img class="channel-image" src="Thumbnails/channel-2.jpeg" alt="channel-pic">
+            </div>
+            <div class="title-author-stats">
+                <span class="video-title">Try Not To Laugh Challenge #9</span>
+                <span class="video-author">Markiplier</span>
+                <span class="video-stats">19M views &middot; 4 years ago</span>
+            </div>
+        </div>
     </div>
 
-    <div class="video-preview video2">
-        <img class="thumbnail" src="Thumbnails/thumbnail-2.webp" alt="image" />
-        <p class="video-title">Try Not To Laugh Challenge #9</p>
-        <p class="video-author">Markiplier</p>
-        <p class="video-stats">19M views &middot; 4 years ago</p>
+    <div class="video-preview">
+        <div class="thumbnail">
+            <img class="thumbnail-image" src="Thumbnails/thumbnail-3.webp" alt="image" />
+        </div>
+        <div class="video-info">
+            <div class="channel">
+                <img class="channel-image" src="Thumbnails/channel-3.jpeg" alt="channel-pic">
+            </div>
+            <div class="title-author-stats">
+                <span class="video-title">Crazy Tik Toks Taken Moments Before DISASTER</span>
+                <span class="video-author">SSSniperWolf</span>
+                <span class="video-stats">12M views · 1 year ago</span>
+            </div>
+        </div>
     </div>
 
-    <div class="video-preview video3">
-        <img class="thumbnail" src="Thumbnails/thumbnail-3.webp" alt="image" />
-        <p class="video-title">Crazy Tik Toks Taken Moments Before DISASTER</p>
-        <p class="video-author">SSSniperWolf</p>
-        <p class="video-stats">12M views · 1 year ago</p>
+    <div class="video-preview">
+        <div class="thumbnail">
+            <img class="thumbnail-image" src="Thumbnails/thumbnail-4.webp" alt="image" />
+        </div>
+        <div class="video-info">
+            <div class="channel">
+                <img class="channel-image" src="Thumbnails/channel-4.jpeg" alt="channel-pic">
+            </div>
+            <div class="title-author-stats">
+                <span class="video-title">The Simplest Math Problem No One Can Solve - Collatz Conjecture</span>
+                <span class="video-author">Veritasium</span>
+                <span class="video-stats">18M views · 4 months ago</span>
+            </div>
+        </div>
     </div>
 
-    <div class="video-preview video4">
-        <img class="thumbnail" src="Thumbnails/thumbnail-4.webp" alt="image" />
-        <p class="video-title">The Simplest Math Problem No One Can Solve - Collatz Conjecture</p>
-        <p class="video-author">Veritasium</p>
-        <p class="video-stats">18M views · 4 months ago</p>
+    <div class="video-preview">
+        <div class="thumbnail">
+            <img class="thumbnail-image" src="Thumbnails/thumbnail-5.webp" alt="image" />
+        </div>
+        <div class="video-info">
+            <div class="channel">
+                <img class="channel-image" src="Thumbnails/channel-5.jpeg" alt="channel-pic">
+            </div>
+            <div class="title-author-stats">
+                <span class="video-title">Kadane's Algorithm to Maximum Sum Subarray Problem</span>
+                <span class="video-author">CS Dojo</span>
+                <span class="video-stats">519K views · 5 years ago</span>
+            </div>
+        </div>
     </div>
+
+    <div class="video-preview">
+        <div class="thumbnail">
+            <img class="thumbnail-image" src="Thumbnails/thumbnail-6.webp" alt="image" />
+        </div>
+        <div class="video-info">
+            <div class="channel">
+                <img class="channel-image" src="Thumbnails/channel-6.jpeg" alt="channel-pic">
+            </div>
+            <div class="title-author-stats">
+                <span class="video-title">Anything You Can Fit In The Circle I’ll Pay For</span>
+                <span class="video-author">MrBeast</span>
+                <span class="video-stats">141M views · 1 year ago</span>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
