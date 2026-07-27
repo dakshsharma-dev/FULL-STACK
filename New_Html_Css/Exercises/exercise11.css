@@ -1,0 +1,27 @@
+.face-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+}
+
+.profile{
+   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); 
+}
+.image{
+    width: 100%;
+    height: 400px;
+}    
+.pics-about p{
+    margin: 5px 10px;
+}
+
+button {
+    color: white;
+    background-color: rgb(35, 151, 228);
+    border: none;
+    border-radius: 2px;
+    padding: 6px 14px;
+    cursor: pointer;
+    margin: 5px 10px;
+
+}

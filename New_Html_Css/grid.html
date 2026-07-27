@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid Practice</title>
 </head>
-<body>
+<body style="padding-bottom: 500px;">
     
     <div style="
         display: grid;
@@ -43,6 +43,21 @@
         <div style="background-color: lightblue;">100px</div>
         <div style="background-color: lightcoral;">1fr</div>
         <div style="background-color: lightgreen;">1fr</div>
+    </div>
+
+    <div style="
+        margin-top: 20px;
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 5px;
+        row-gap: 15px;
+        ">
+        <div style="background-color: lightblue; height: 200px;">1fr</div>
+        <div style="background-color: lightcoral; height: 200px;">1fr</div>
+        <div style="background-color: lightgreen; height: 200px;">1fr</div>
+        <div style="background-color: lightgreen; height: 200px;">1fr</div>
+        <div style="background-color: lightblue; height: 200px;">1fr</div>
+        <div style="background-color: lightcoral; height: 200px;">1fr</div>
     </div>
 </body>
 </html>

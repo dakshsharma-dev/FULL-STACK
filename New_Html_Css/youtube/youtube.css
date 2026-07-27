@@ -10,53 +10,41 @@
     border-radius: 20px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
-
 .search-bar:focus {
     outline: none;
 }
-
 .search-bar::placeholder {
     color: rgba(0, 0, 0, 0.5);
 }
 
-
-.video-preview {
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    width: 350px;
-    height: 300px;
-    display: inline-block;
-    vertical-align: top;
-    padding: 10px;
+.video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 20px;
 }
+
 .video-preview:hover{
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 10px;
 }
 
-.thumbnail-image {
-    width: 350px;
+.thumbnail {
+    width: 100%;
     border-radius: 10px;
 }
 
-.video-info{
-    display: block;
-    margin-top: 5px;
+.video-info-grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
 }
 
-.channel {
-    display: inline-block;  
-    vertical-align: top;  
-    margin-right: 10px;
-    height: 100px;
-}
-.channel-image {
+.profile-picture {
     width: 40px;
     border-radius: 50px;
 }
-
-.title-author-stats{
-    display: inline-block;
-    width: 280px;
+.video-info{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 .video-title{
     font-weight: 500;
