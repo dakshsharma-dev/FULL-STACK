@@ -1,10 +1,13 @@
 .search-bar {
     display: block;
     color: rgba(0, 0, 0, 0.6);
-    width: 400px;
-    height: 30px;
-    border: none;
-    border-radius: 15px;
+    font-size: 15p x;
+    width: 600px;
+    height: 40px;
+    margin: 0 auto;
+    padding: 0 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -18,7 +21,7 @@
 
 
 .video-preview {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     width: 350px;
     height: 300px;
     display: inline-block;
@@ -37,6 +40,7 @@
 
 .video-info{
     display: block;
+    margin-top: 5px;
 }
 
 .channel {
@@ -47,20 +51,20 @@
 }
 .channel-image {
     width: 40px;
-    border-radius: 20px;
+    border-radius: 50px;
 }
 
 .title-author-stats{
     display: inline-block;
     width: 280px;
-    height: 100px;
 }
 .video-title{
-    font-weight: 530;
-}
+    font-weight: 500;
+}    
 .video-author, .video-stats{
     display: block;
     color: rgba(0, 0, 0, 0.6);
     font-size: 14px;
+    margin-top: 5px;
 }
 
