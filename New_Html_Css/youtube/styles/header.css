@@ -1,0 +1,36 @@
+.header{
+    height: 60px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.left-section{
+    background-color: lightblue;
+    width: 180px;
+}
+.middle-section{
+    background-color: lightcoral;
+    flex: 1;
+    margin-left: 130px;
+    margin-right: 60px;
+    max-width: 650px;
+}
+.right-section{
+    background-color: lightseagreen;
+    width: 220px;
+}
+
+
+
+
+
+
+
+
+/* .search-bar:focus {
+    outline: none;
+}
+.search-bar::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+} */
