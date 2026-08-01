@@ -1,9 +1,18 @@
+body{
+    padding-top: 80px;
+}
+
+
 .header{
     height: 60px;
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: fixed;
+    background-color: white;
+    top: 0px;
+    left: 0px;
+    right: 0px;
 }
 .left-section{
     display: flex;
@@ -17,7 +26,6 @@
 .youtube-logo{
     height: 20px;
 }
-
 
 .middle-section{
     flex: 1;
@@ -97,15 +105,4 @@
     border-radius: 20px;
     margin-left: 20px;
     cursor: pointer;
-}
-
-
-
-
-
-
-
-
-/* .search-bar:focus {
-    outline: none;
 }
