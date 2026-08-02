@@ -13,6 +13,7 @@ body{
     top: 0px;
     left: 0px;
     right: 0px;
+    z-index: 100;
 }
 .left-section{
     display: flex;
@@ -20,11 +21,26 @@ body{
     align-items: center;
 }
 .hamburger-menu{
-    height: 25px;
-    margin: 0px 24px;
+    width: 40px;
+    height: 40px;
+    margin: 10px 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 50%; */
+    cursor: pointer;
+}
+.hamburger-menu img{
+    width: 24px;
+    height: 24px;
+}
+.hamburger-menu:hover{
+    border-radius: 30px;
+    background-color: rgba(224, 213, 213, 0.7);
 }
 .youtube-logo{
     height: 20px;
+    cursor: pointer;
 }
 
 .middle-section{
@@ -94,6 +110,22 @@ body{
 .create-button{
     height: 28px;
     cursor: pointer;
+}
+.notifications{
+    position: relative;
+}
+.notifications-count{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    color: white;
+    background-color: red;
+    border-radius: 8px;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 .notifications-button{
     height: 28px;
