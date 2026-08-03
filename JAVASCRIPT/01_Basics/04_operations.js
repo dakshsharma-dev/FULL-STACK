@@ -41,7 +41,11 @@ let num1, num2, num3;
 num1 = num2 = num3 = 2 + 2;         // DISCOURAGED
 console.table([num1, num2, num3]);
 
-
+let gameCounter = 100;
+gameCounter++;                      // postfix
+console.log(gameCounter); 
+++gameCounter;                      // prefix
+console.log(gameCounter);
 
 
 
