@@ -29,9 +29,10 @@ let isLogggedIn = true;
 
 console.log(typeof(null));          // object
 console.log(typeof(undefined));     // undefined
-console.log(typeof(20));            // number
-console.log(typeof("Daksh"));
 console.log(typeof(symbol));        // undefined
-console.log(typeof(true));
+
+console.log(typeof(20));            // number
+console.log(typeof("Daksh"));       // string 
+console.log(typeof(true));          // boolean
 console.log(typeof(9323n));         // bigint
 
