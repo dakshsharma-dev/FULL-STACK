@@ -43,6 +43,7 @@ body{
     cursor: pointer;
 }
 
+
 .middle-section{
     flex: 1;
     
@@ -52,6 +53,8 @@ body{
 
     display: flex;
     align-items: center;
+
+    position: relative;
 }
 .search-bar{
     flex: 1;
@@ -86,6 +89,42 @@ body{
     height: 24px;
     margin-top: 2px;
 }
+.search-button .tooltip{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.7);
+    padding: 8px 4px;
+    border-radius: 2px;
+    position: absolute;
+    bottom: -30px;
+    right: 60px;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+}
+.search-button:hover .tooltip{
+    opacity: 1;
+}
+.voice-button .tooltip{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.7);
+    padding: 8px 4px;
+    border-radius: 2px;
+    position: absolute;
+    bottom: -30px;
+    right: -60px;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+}
+.voice-button:hover .tooltip{
+    opacity: 1;
+}
 .voice-button{
     background-color: rgb(239, 233, 233);
     height: 40px;
@@ -96,7 +135,6 @@ body{
 }
 .voice-icon{
     height: 24px;
-    
 }
 
 
@@ -115,22 +153,42 @@ body{
     position: relative;
 }
 .notifications-count{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 15px;
-    height: 15px;
+    padding: 2px 4px;
     color: white;
     background-color: red;
-    border-radius: 8px;
+    border-radius: 10px;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -2px;
+    right: -5px;
 }
 .notifications-button{
     height: 28px;
     margin-left: 20px;
     cursor: pointer;
+}
+.notifications .tooltip{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.7);
+    padding: 8px 4px;
+    border-radius: 2px;
+    position: absolute;
+    bottom: -45px;
+    right: -24px;
+    
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+}
+.notifications:hover .tooltip{
+    opacity: 1;
 }
 .user-button{
     height: 40px;
