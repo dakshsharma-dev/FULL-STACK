@@ -6,7 +6,7 @@ console.log("02" > 1);      // true
 
 
 console.log("String comparison with String");
-console.log("Daksh" == "Daksh");
+console.log("Daksh" == "Daksh");   // true
 console.log("Daksh" > "Aadi");     // true
 console.log("Aadi" > "Daksh");     // false // checked lexicographically
 console.log("Adi" > "Aadi");       // true

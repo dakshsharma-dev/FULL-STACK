@@ -7,6 +7,7 @@ let accountEmail = "daksh@gmail.com";  // dynamically typed language -> infers t
 var accountPassword = "1234";
 accountCity = "Jaipur";                // this is also valid in js but don't declare like this
 let accountState;                      // undefined
+const outsideTemp = null;   
 
 // modifications 
 accountEmail = "afodsfsd.com"

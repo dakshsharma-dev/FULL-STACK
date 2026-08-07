@@ -3,22 +3,28 @@ console.log("Conversion to Number");
 
 // string -> number
 let s = "54abc";
-console.log(typeof s);
-let valueInNumber = Number(s);
+console.log(typeof s);                  // string
+let valueInNumber = Number(s);          
 console.log(typeof valueInNumber);      // number
 console.log(valueInNumber);             // NaN(Not a Number)
 
+
+// ************NOTE**********:   
+// let x = Number("a") / String(5) / Boolean(5) / BigInt(5) / Symbol(..)  -->> These are function calls as Number(), String(), Boolean(), BigInt(), Symbol() are CONSTRUCTORS not CAST-OPERATORS.
+// No such constructors for null or undefined.  
+// While number, bigint, string, boolean, symbol, null, undefined are actual primitive datatypes.
+
 // null -> number
 let s1 = null;
-console.log(typeof s1);
-let valueInNumber1 = Number(s1);
+console.log(typeof s1);                  // object*****
+let valueInNumber1 = Number(s1);         
 console.log(typeof valueInNumber1);      // number
-console.log(valueInNumber1);             // 0
+console.log(valueInNumber1);             // 0*****
 
 // undefined -> number
 let s2 = undefined;
-console.log(typeof s2);
-let valueInNumber2 = Number(s2);
+console.log(typeof s2);                  // undefined
+let valueInNumber2 = Number(s2);         
 console.log(typeof valueInNumber2);      // number
 console.log(valueInNumber2);             // NaN
 
@@ -43,7 +49,7 @@ console.log(valueInNumber4);              // 1
 console.log("Conversion to Boolean");
 
 // number -> boolean
-let s5 = 1;
+let s5 = 5;
 let s6 = Boolean(s5);
 console.log(typeof s6);
 console.log(s6);
