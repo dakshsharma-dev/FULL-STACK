@@ -1,5 +1,6 @@
 // Stack(with primitive variables, you get a copy of varible), Heap(non-primitive, you get a reference of variable)
 
+                                        // UNDERSTANDING STACK // 
 let myYoutubeName = "DakshSharma";      // stored in STACK
 let anotherName = myYoutubeName;        // gets a copy of myYoutubeName
 console.log(myYoutubeName);             // DakshSharma
@@ -11,7 +12,8 @@ console.log(myYoutubeName);             // DakshSharma
 console.log(anotherName);               // Daksh
 // ABOVE 2 LINES SUGGESTS THAT anotherName GOT COPY OF myYoutubeName NOT A REFERENCE TO IT.
 
- 
+                                        // UNDERSTANDING HEAP //
+
 let userOne = {                         // variable name is in stack and gets a reference to its properties stored in HEAP 
     email: "user@gmail.com",            // properties are stored in HEAP
     upi: "user@hdfc"                    // properties are stored in HEAP
