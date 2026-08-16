@@ -2,16 +2,8 @@
 // OBJECTS
 // ====================================================================
 
-
-// --------------------------------------------------------------------
-// Singleton Concept
-// --------------------------------------------------------------------
-
-// Constructor method → singleton
+// Constructor method → singleton. // Object.create() → constructor method
 // Object literals → not singleton
-
-
-// Object.create() → constructor method
 
 
 // ====================================================================
@@ -246,4 +238,3 @@ console.log(jsUser.greeting);
 // () → executes the function
 jsUser.greeting();
 jsUser.greetingTwo();
-
