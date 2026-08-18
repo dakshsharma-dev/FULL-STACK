@@ -52,3 +52,95 @@ console.log(x);      // 100
 // - Browser Console
 // Variables declared globally may behave differently
 // because the global object is different in each environment.
+
+
+
+// Nested Functions and Scope
+
+function one() {
+    const username = "daksh";
+
+    function two() {
+        const website = "youtube";
+
+        // Child function can access variables of its parent function.
+        // This behaviour is called a closure.
+        console.log(username);
+    }
+
+    // console.log(website);
+    // Error: website is only available inside function two()
+
+    two();
+}
+
+one();
+
+
+
+// Nested Blocks
+
+if (true) {
+    const username = "daksh";
+
+    if (username === "daksh") {
+        const website = "youtube";
+
+        // Inner block can access variables of outer block.
+        console.log(username + " " + website);
+    }
+
+    // console.log(website);
+    // Error: website exists only inside the inner if block
+}
+
+// console.log(username);
+// Error: username exists only inside the outer if block
+
+
+
+
+// ++++++++++++++++++++++++ Interesting ++++++++++++++++++++++++ //
+
+// Function Declaration
+
+console.log(addone(5));      // 6
+
+function addone(num) {
+    return num + 1;
+}
+
+// Why does this work?
+// Function declarations are hoisted.
+// During the creation phase, the entire function definition
+// is moved to memory before the code executes.
+
+
+
+// Function Expression
+
+// console.log(addTwo(5));
+// Error: Cannot access 'addTwo' before initialization
+
+const addTwo = function(num) {
+    return num + 2;
+};
+
+console.log(addTwo(5));      // 7
+
+// Why?
+// Only the variable declaration is hoisted.
+// The function is assigned to the variable later during execution.
+// Therefore addTwo cannot be used before its initialization.
+
+
+
+// Summary:
+// Function Declaration  -> Can be called before its definition (hoisted)
+// Function Expression   -> Cannot be called before its initialization
+//
+// Example:
+// function greet() {}      -> Function Declaration
+//
+// const greet = function() {}
+// const greet = () => {}   -> Function Expressions
