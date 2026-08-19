@@ -23,8 +23,16 @@ user.welcomeMessage();
 
 
 console.log(this);
-// In Node.js (CommonJS), at the top level -> {}
-// In a browser's top-level script -> window
+// In Node.js (CommonJS), at the top level -> {}             *********************VERY IMP*************************
+// In a browser's top-level script -> window                 *********************VERY IMP*************************
+
+// *********************VERY IMP************************* // 
+// Node.js (CommonJS) on command console.log(this);
+
+   // Top-level this            -> {}                              [this refers to the module's exports object (effectively module.exports), not the global object]
+
+   // Normal function call      -> global object (non-strict mode) [JavaScript binds this to the global object]
+   //                           -> undefined (strict mode)         [strict mode prevents the automatic binding of this to the global object]
 
 
 
@@ -35,14 +43,25 @@ console.log(this);
 function chai() {
     let username = "daksh";
 
-    console.log(this);
+    console.log(username);          // "daksh"
+    console.log(this);              // return a huge object
     console.log(this.username);     // undefined
     // this does NOT refer to the function's local variables.
     // this.username looks for a property named "username"
     // on the object referred to by this.
 }
-
 chai();
+// Compare:
+
+// user.welcomeMessage();
+// Here this is user.
+
+// But:
+// chai();
+// There is no user/object calling the function.
+
+// In Node.js, the exact value of this for a standalone normal function depends on how the code is executed (and especially whether strict mode is involved). In a typical non-strict CommonJS execution, it can be the global object, which is why you may see a very large object when you console.log(this).
+
 
 
 // Function expression behaves the same way as a normal function.
@@ -51,10 +70,10 @@ chai();
 const chai1 = function () {
     let username = "daksh";
 
-    console.log(this);
+    console.log(username);          // "daksh"
+    console.log(this);              // return a huge object
     console.log(this.username);     // undefined
 };
-
 chai1();
 
 
@@ -71,12 +90,11 @@ const chai2 = () => {
     console.log(this);
     console.log(this.username);     // undefined
 
-    // Arrow functions do NOT have their own "this".
-    // They inherit "this" from the surrounding scope.
+    // Arrow functions do NOT have their own "this".   // arrow function is defined at the top level of the file
+    // They inherit "this" from the surrounding scope. // surrounding scope's this is the top-level this.
 };
 
 chai2();
-
 
 // Important:
 // Normal function -> gets its own "this" depending on how it is called.
