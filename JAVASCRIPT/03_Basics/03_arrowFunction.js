@@ -25,6 +25,19 @@ user.welcomeMessage();
 console.log(this);
 // In Node.js (CommonJS), at the top level -> {}             *********************VERY IMP*************************
 // In a browser's top-level script -> window                 *********************VERY IMP*************************
+// In a Browser
+        // console.log(this);
+        // prints: window
+
+        // window is the global object provided by the browser.
+        // It contains things like:
+        // window.alert()
+        // window.setTimeout()
+        // window.document
+        // window.console
+        // console.log("Hello"); equivalents to window.console.log("Hello");
+
+
 
 // *********************VERY IMP************************* // 
 // Node.js (CommonJS) on command console.log(this);
