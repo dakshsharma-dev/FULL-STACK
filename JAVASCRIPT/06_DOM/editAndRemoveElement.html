@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur Code | DOM</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <ul class="language">
+        <li>Java</li>
+    </ul>
+</body>
+<script>
+    // ADD
+    function addLanguage(langName){
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`;                     // (traverse complete dom structure)
+        document.querySelector('.language').appendChild(li);
+    }
+    addLanguage('Javascript');
+    addLanguage('C++');
+
+
+    // optimal way to add language name
+    function addOptiLanguage(langName){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName));
+        document.querySelector('.language').appendChild(li);
+    }
+    addOptiLanguage('python');
+    addOptiLanguage('golang');
+
+    // EDIT
+    const secondLang = document.querySelector('li:nth-child(2)');
+    // secondLang.innerHTML = 'mojo';  // not optimal approach (traverse complete dom structure)
+    const newLi = document.createElement('li');
+    newLi.textContent = 'mojo';        // not 100% optimal
+    secondLang.replaceWith(newLi);
+
+    // edit (another way)
+    const lastLang = document.querySelector('li:last-child');
+    lastLang.outerHTML = '<li>Typescript</li>';
+
+
+    // remove
+    const fourthLang = document.querySelector('li:nth-child(4)');
+    fourthLang.remove();
+</script>
+</html>
